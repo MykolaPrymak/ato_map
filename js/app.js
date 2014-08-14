@@ -11,10 +11,10 @@ define(['jquery', 'map_data', 'storage'], function($, map_data, Storage) {
       var $container = $('#content');
       var _this = this;
 
+      var storage = new Storage('ato', {hideHelp: false});
+
       $map = $('#map');
       $mapDate = $('#map-date');
-
-      
 
       $(document).on('keydown', function(evt) {
         var keyCode = evt.keyCode;
@@ -31,7 +31,15 @@ define(['jquery', 'map_data', 'storage'], function($, map_data, Storage) {
       $('#next').click(function() {
         _this.showNext();
       });
-      
+
+      if (storage.get('hideHelp')) {
+        $('#helpAlert').css('display', 'none');
+      }
+      $('#helpAlert .close').click(function() {
+        storage.set('hideHelp', true);
+        $('#helpAlert').css('display', 'none');
+      });
+
       this.mapCurrentIdx= map_data.length - 1;
       this.mapMaxIdx= map_data.length - 1;
       this.showMap(map_data[this.mapCurrentIdx]);
