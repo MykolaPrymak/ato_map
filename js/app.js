@@ -1,6 +1,6 @@
 "use strict";
 
-define(['jquery', 'map_data'], function($, map_data) {
+define(['jquery', 'map_data', 'storage'], function($, map_data, Storage) {
   var KEY_ARROW_LEFT = 37;
   var KEY_ARROW_RIGHT = 39;
   var $map;

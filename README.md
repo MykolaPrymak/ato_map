@@ -1,5 +1,5 @@
-# [ATO MAP](http://mykolaprymak.github.io/ato_map/)
+# ATO MAP (http://mykolaprymak.github.io/ato_map/)
 
 ## Info
 
-ATO map with keyboard navigation
+ATO map with keyboard navigation.
