@@ -1,0 +1,32 @@
+{
+  "name": "ato_map",
+  "version": "0.0.0",
+  "authors": [
+    "Mykola Prymak <mykola.prymak@gmail.com>"
+  ],
+  "description": "ATO Map",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "ato",
+    "ukraine"
+  ],
+  "license": "MIT",
+  "homepage": "https://mykolaprymak.github.io/ato_map/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.14",
+    "bootstrap": "~3.2.0"
+  }
+}
